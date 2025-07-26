@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eliminar Margarita</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <div class="container mx-auto p-8">
+    <h1 class="text-4xl font-semibold text-center mb-6">Eliminar Margarita</h1>
+    <p class="text-lg mb-4">
+      ¿Seguro que quieres eliminar la margarita: 
+      <strong id="nombreMargarita" class="text-red-600">...</strong>?
+    </p>
+
+    <div class="space-y-4 text-center max-w-xs mx-auto">
+      <button id="btnEliminar" class="bg-red-500 text-white py-2 px-6 rounded hover:bg-red-600 w-full">
+        Sí, eliminar
+      </button>
+      <a href="/vista/margarita_lista.html" class="block bg-gray-500 text-white py-2 px-6 rounded hover:bg-gray-600 w-full mt-2">
+        No, cancelar
+      </a>
+    </div>
+
+    <p id="mensajeError" class="text-red-500 text-center mt-4 hidden"></p>
+  </div>
+
+  <script src="/js/baja.js"></script>
+</body>
+</html>
